@@ -150,40 +150,29 @@ body {
   box-shadow:0 4px 10px rgba(0,0,0,0.12);
 }
 
-/* 백일몽 */
-.baek-wrap {
-  background:#0c0c18;
-  padding:44px 24px;
-  text-align:center;
-}
-.baek-body {
-  font-size:14px;
-  color:#aaa;
-  line-height:2.3;
-}
-
-/* 사진 */
-.photo-wrap {
-  background:#fff;
-  color:#111;
-  padding:38px 20px;
-}
-
-/* SNS */
-.sns-wrap {
-  background:#111;
-  padding:16px 20px;
-  display:flex;
-  gap:20px;
-}
-
-/* 후원자 */
-.donor-wrap {
-  background:#fff;
-  color:#111;
-  padding:50px 24px;
-  text-align:center;
-}
+/* ── 백일몽 (검정) ── */ 
+  .baek-wrap { background:#0c0c18; padding:44px 24px 40px; text-align:center; } 
+  .baek-logo-img { width:160px; max-width:70%; margin-bottom:28px; } 
+  .baek-body { font-size:14px; color:#aaa; line-height:2.3; word-break:keep-all; } .baek-body b { color:#ddd; font-weight:500; } 
+  /* ── 공연사진 (흰 배경) ── */ 
+  .photo-wrap { background:#fff; color:#111; padding:38px 20px; } 
+  .photo-main-title { font-size:19px; font-weight:700; color:#111; text-align:center; margin-bottom:28px; font-family:'Noto Serif KR',serif; } 
+  .photo-group { margin-bottom:24px; } 
+  .photo-label { font-size:13px; font-weight:700; color:#111; margin-bottom:8px; padding-bottom:5px; border-bottom:1.5px solid #111; } 
+  .photo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; } 
+  .photo-cell { aspect-ratio:1; background:#ccc; border-radius:3px; display:flex; align-items:center; justify-content:center; font-size:10px;  color:#888; overflow:hidden; } 
+  .photo-cell img { width:100%; height:100%; object-fit:cover; } 
+  /* ── SNS 바 ── */ 
+  .sns-wrap { background:#111; padding:16px 20px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; } 
+  .sns-link { display:flex; align-items:center; gap:8px; font-size:12px; color:#ccc; text-decoration:none; } 
+  .sns-ico { width:28px; height:28px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:15px; flex-shrink:0; } 
+  .ig-ico { background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); } 
+  .yt-ico { background:#ff0000; }
+  /* ── 후원자 명단 (흰 배경) ── */ 
+  .donor-wrap { background:#fff; color:#111; padding:50px 24px 56px; text-align:center; } 
+  .donor-title { font-family:'Noto Serif KR',serif; font-size:23px; font-weight:700; margin-bottom:28px; color:#111; } 
+  .donor-body { font-size:14px; color:#444; line-height:2.1; } 
+  .donor-sign { margin-top:20px; font-size:14px; color:#222; font-weight:600; } 
 </style>
 </head>
 
