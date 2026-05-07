@@ -77,139 +77,164 @@
         }
 
         /* ── 후원 혜택 (짙은 파랑) ── */
-        .sponsor-wrap {
-            background: #1a2040;
-            padding: 38px 18px 30px;
-        }
+    /* ───────────────── */
+/* 후원 섹션 */
+/* ───────────────── */
 
-        .sec-title-white {
-            font-size: 16px;
-            font-weight: 700;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 20px;
-            letter-spacing: 0.8px;
-        }
-
-        /* 혜택 표 */
-        .benefit-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 12.5px;
-        }
-
-        .benefit-table th {
-            background: #5a85e0;
-            color: #fff;
-            font-weight: 700;
-            padding: 12px 8px;
-            border: 2px solid #2a3868;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .benefit-table th:first-child {
-            background: #4a75d0;
-        }
-
-        .cell-common {
-            background: #8ab4f0;
-            color: #fff;
-            font-weight: 600;
-            padding: 16px 12px;
-            border: 2px solid #2a3868;
-            text-align: center;
-            font-size: 13px;
-            line-height: 1.9;
-        }
-
-        .cell-label {
-            background: #6a9de0;
-            color: #fff;
-            font-weight: 700;
-            font-size: 18px;
-            padding: 14px 8px;
-            border: 2px solid #2a3868;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .cell-mid {
-            background: #8ab4f0;
-            color: #fff;
-            font-weight: 600;
-            padding: 14px 10px;
-            border: 2px solid #2a3868;
-            text-align: center;
-            font-size: 13px;
-            line-height: 1.7;
-        }
-
-        .cell-dark {
-            background: #1a2a5a;
-            border: 2px solid #2a3868;
-        }
-
-        .cell-top {
-            background: #8ab4f0;
-            color: #fff;
-            font-weight: 600;
-            padding: 12px 8px;
-            border: 2px solid #2a3868;
-            text-align: center;
-            font-size: 12px;
-            line-height: 1.7;
-        }
-
-        .support-box {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 12px 20px 20px 20px;
-            margin-top: 20px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-        }
-
-        .tier-note {
-            margin-top: 0;
-            font-size: 15px;
-            color: #333;
-            line-height: 1.8;
-            text-align: center;
-        }
-
-.kakao-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 58px;
-
-  margin-top: 18px;
-
-  background: #3A9AFF;
-  color: #191919;
-
-  font-weight: 700;
-  font-size: 15px;
-
-  border-radius: 12px;
-
-  text-decoration: none;
-
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-
-  transition: all 0.2s ease;
+.sponsor-wrap{
+  background:#101b46;
+  padding:44px 18px 40px;
 }
 
-.kakao-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 18px rgba(0,0,0,0.18);
+.sec-title-white{
+  text-align:center;
+  color:#fff;
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:28px;
+  font-family:'Noto Serif KR',serif;
 }
 
-.kakao-btn:active {
-  transform: translateY(1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+/* 카드 영역 */
+
+.tier-wrap{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+/* 카드 */
+
+.tier-card{
+  overflow:hidden;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 상단 파란 영역 */
+
+.tier-top{
+  background:linear-gradient(180deg,#6fa8ff 0%, #4f86ff 100%);
+  padding:22px 18px 28px;
+  text-align:center;
+}
+
+.tier-badge{
+  display:inline-block;
+  padding:6px 16px;
+  border:1px solid rgba(255,255,255,0.6);
+  border-radius:999px;
+  color:#fff;
+  font-size:12px;
+  margin-bottom:18px;
+}
+
+.tier-price{
+  color:#fff;
+  font-size:38px;
+  font-weight:800;
+  line-height:1.2;
+}
+
+/* 본문 */
+
+.tier-body{
+  padding:24px 22px 26px;
+}
+
+.tier-item{
+  font-size:14px;
+  line-height:1.9;
+  color:#222;
+  margin-bottom:10px;
+  word-break:keep-all;
+}
+
+.tier-desc{
+  text-align:center;
+  font-size:14px;
+  color:#555;
+  margin-bottom:16px;
+}
+
+.tier-line{
+  height:1px;
+  background:#ddd;
+  margin-bottom:18px;
+}
+
+/* 후원 카드 */
+
+.support-box{
+  margin-top:24px;
+  background:#fff;
+  border-radius:24px;
+  padding:28px 22px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  text-align:center;
+}
+
+.support-title{
+  font-size:20px;
+  font-weight:700;
+  color:#3A9AFF;
+  margin-bottom:18px;
+}
+
+.support-account{
+  font-size:16px;
+  line-height:2;
+  color:#222;
+  font-weight:500;
+}
+
+.support-divider{
+  height:1px;
+  background:#ddd;
+  margin:24px 0;
+}
+
+.tier-note{
+  font-size:14px;
+  line-height:2;
+  color:#555;
+  word-break:keep-all;
+}
+
+/* 버튼 */
+
+.support-btn{
+  margin-top:28px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  width:100%;
+  height:62px;
+
+  background:#3A9AFF;
+  color:#fff;
+
+  border-radius:16px;
+
+  font-size:18px;
+  font-weight:700;
+
+  text-decoration:none;
+
+  box-shadow:0 8px 20px rgba(58,154,255,0.35);
+
+  transition:0.2s ease;
+}
+
+.support-btn:hover{
+  transform:translateY(-2px);
+}
+
+.support-btn:active{
+  transform:translateY(1px);
 }
 
         /* ── 백일몽 (검정) ── */
@@ -380,56 +405,106 @@
         </div>
     </div>
 
-    <!-- 후원 혜택 -->
-   <div class="sponsor-wrap">
-    <div class="sec-title-white">디딤프로젝트 후원 혜택 안내</div>
-    <table class="benefit-table">
-        <thead>
-            <tr>
-                <th>구분</th>
-                <th>5만원</th>
-                <th>10만원</th>
-                <th>20만원 이상</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="cell-label" rowspan="3">혜택</td>
-                <td class="cell-common" colspan="3">
-                    후원회 및 카드뉴스 내 이름 등록<br>
-                    기념품 증정, 공연 전 특별 안내 방송<br>
-                    무대 기념 촬영
-                </td>
-            </tr>
-            <tr>
-                <td class="cell-dark"></td>
-                <td class="cell-mid" colspan="2">디딤프로젝트 티켓 50% 할인 제공</td>
-            </tr>
-            <tr>
-                <td class="cell-dark"></td>
-                <td class="cell-dark"></td>
-                <td class="cell-top">극단 백일몽<br>리딩·워크숍·리허설 초대</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-        <div class="support-box">
-            <div class="tier-note">
-                ※ 후원 계좌 ※<br>
-                토스뱅크 1002-4334-5444 | 예금주: 이다영<br>
-                문의: 010-6743-0108<br><br>
-                입금 후, 혜택 안내를 위해<br>
-                <b>폼 작성</b>을 해주시기 바랍니다.<br>
-                폼 작성을 하지 않으실 경우,<br>
-                정확한 후원자 정보를 파악하기 어려워<br>
-                추후 안내 연락과 혜택 제공이 어려울 수 있습니다.
+  <!-- 후원 혜택 카드형 UI -->
+<div class="sponsor-wrap">
 
-                <a href="https://naver.me/GNJvjI2A" target="_blank" class="kakao-btn">
-후원자 정보 등록하기
-</a>
-            </div>
-        </div>
+  <div class="sec-title-white">
+    ✶ 디딤프로젝트 후원 혜택 안내 ✶
+  </div>
+
+  <div class="tier-wrap">
+
+    <!-- 5만원 -->
+    <div class="tier-card">
+      <div class="tier-top">
+        <div class="tier-badge">구분</div>
+        <div class="tier-price">5만원</div>
+      </div>
+
+      <div class="tier-body">
+        <div class="tier-item">✔ 후원회 및 카드뉴스 내 이름 등록</div>
+        <div class="tier-item">✔ 기념품 증정</div>
+        <div class="tier-item">✔ 공연 전 특별 안내 방송</div>
+        <div class="tier-item">✔ 무대 기념 촬영</div>
+      </div>
     </div>
+
+    <!-- 10만원 -->
+    <div class="tier-card">
+      <div class="tier-top">
+        <div class="tier-badge">구분</div>
+        <div class="tier-price">10만원</div>
+      </div>
+
+      <div class="tier-body">
+        <div class="tier-desc">
+          5만원 후원 혜택 포함
+        </div>
+
+        <div class="tier-line"></div>
+
+        <div class="tier-item">
+          ✔ 디딤프로젝트 티켓 50% 할인 제공
+        </div>
+      </div>
+    </div>
+
+    <!-- 20만원 -->
+    <div class="tier-card">
+      <div class="tier-top">
+        <div class="tier-badge">구분</div>
+        <div class="tier-price">20만원 이상</div>
+      </div>
+
+      <div class="tier-body">
+
+        <div class="tier-desc">
+          10만원 후원 혜택 포함
+        </div>
+
+        <div class="tier-line"></div>
+
+        <div class="tier-item">
+          ✔ 극단 백일몽 리딩 워크숍 리허설 초대
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 후원 정보 카드 -->
+  <div class="support-box">
+
+    <div class="support-title">
+      ✶ 후원 계좌 ✶
+    </div>
+
+    <div class="support-account">
+      토스뱅크 1002-4334-5444<br>
+      예금주 : 이다영<br>
+      문의 : 010-6743-0108
+    </div>
+
+    <div class="support-divider"></div>
+
+    <div class="tier-note">
+      입금 후, 혜택 안내를 위해<br>
+      <b>구글 폼 작성</b>을 해주시기 바랍니다.<br><br>
+
+      폼 작성을 하지 않으실 경우,<br>
+      정확한 후원자 정보를 파악하기 어려워<br>
+      추후 안내 연락과 혜택 제공이 어려울 수 있습니다.
+    </div>
+
+    <!-- 버튼 -->
+    <a href="https://naver.me/GNJvjI2A"
+       target="_blank"
+       class="support-btn">
+      후원자 정보 등록하기
+    </a>
+
+  </div>
+</div>
 
     <!-- 백일몽 -->
     <div class="baek-wrap">
