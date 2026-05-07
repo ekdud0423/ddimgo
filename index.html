@@ -237,6 +237,76 @@
   transform:translateY(1px);
 }
 
+/* 🔥 추가 : 카드 3개 가로 정렬 */
+
+.tier-wrap{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  align-items:stretch;
+}
+
+/* 카드 */
+
+.tier-card{
+  overflow:hidden;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 상단 파란 영역 */
+
+.tier-top{
+  background:linear-gradient(180deg,#6fa8ff 0%, #4f86ff 100%);
+  padding:18px 12px 22px;
+  text-align:center;
+}
+
+.tier-badge{
+  display:inline-block;
+  padding:5px 14px;
+  border:1px solid rgba(255,255,255,0.6);
+  border-radius:999px;
+  color:#fff;
+  font-size:11px;
+  margin-bottom:14px;
+}
+
+.tier-price{
+  color:#fff;
+  font-size:26px;
+  font-weight:800;
+  line-height:1.2;
+}
+
+/* 카드 본문 */
+
+.tier-body{
+  padding:18px 14px 20px;
+}
+
+.tier-item{
+  font-size:12px;
+  line-height:1.7;
+  color:#222;
+  margin-bottom:10px;
+  word-break:keep-all;
+}
+
+.tier-desc{
+  text-align:center;
+  font-size:12px;
+  color:#555;
+  margin-bottom:14px;
+}
+
+.tier-line{
+  height:1px;
+  background:#ddd;
+  margin-bottom:16px;
+}
+
         /* ── 백일몽 (검정) ── */
         .baek-wrap {
             background: #0c0c18;
